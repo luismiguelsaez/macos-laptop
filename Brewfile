@@ -42,5 +42,6 @@ cask "google-chrome"
 cask "slack"
 cask "iterm2"
 cask "bitwarden"
+cask "spotify"
 
 mas "com.apple.dt.Xcode", id: 497799835
