@@ -7,6 +7,7 @@ tap "mas-cli/tap"
 
 brew "mas"
 brew "awscli"
+brew "visual-studio-code"
 brew "bat"
 brew "exa"
 brew "helm"
