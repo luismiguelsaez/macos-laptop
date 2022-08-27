@@ -7,7 +7,6 @@ tap "mas-cli/tap"
 
 brew "mas"
 brew "awscli"
-brew "visual-studio-code"
 brew "bat"
 brew "exa"
 brew "helm"
@@ -46,5 +45,6 @@ cask "slack"
 cask "iterm2"
 cask "bitwarden"
 cask "spotify"
+cask "visual-studio-code"
 
-mas "com.apple.dt.Xcode", id: 497799835
+#mas "com.apple.dt.Xcode", id: 497799835
