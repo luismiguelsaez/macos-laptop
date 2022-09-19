@@ -31,6 +31,7 @@ brew "pkg-config", link: true
 brew "bash"
 brew "git"
 brew "trivy"
+brew "argocd"
 
 cask "font-dejavu-sans-mono-nerd-font"
 cask "font-droid-sans-mono-nerd-font"
