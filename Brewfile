@@ -51,5 +51,6 @@ cask "iterm2"
 cask "bitwarden"
 cask "spotify"
 cask "visual-studio-code"
+cask "metasploit"
 
 #mas "com.apple.dt.Xcode", id: 497799835
