@@ -52,5 +52,6 @@ cask "bitwarden"
 cask "spotify"
 cask "visual-studio-code"
 cask "metasploit"
+cask "multipass"
 
 #mas "com.apple.dt.Xcode", id: 497799835
