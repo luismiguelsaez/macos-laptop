@@ -46,13 +46,13 @@ cask "font-inconsolata-go-nerd-font"
 cask "font-meslo-lg-nerd-font"
 cask "font-roboto-mono-nerd-font"
 cask "multipass"
-cask "firefox"
-cask "google-chrome"
-cask "slack"
-cask "iterm2"
+cask "firefox", args: { appdir: "~/my-apps/Applications" }
+cask "google-chrome", args: { appdir: "~/my-apps/Applications" }
+cask "slack", args: { appdir: "~/my-apps/Applications" }
+cask "iterm2", args: { appdir: "~/my-apps/Applications" }
 cask "bitwarden"
-cask "spotify"
-cask "visual-studio-code"
+cask "spotify", args: { appdir: "~/my-apps/Applications" }
+cask "visual-studio-code", args: { appdir: "~/my-apps/Applications" }
 cask "metasploit"
 
 #mas "com.apple.dt.Xcode", id: 497799835

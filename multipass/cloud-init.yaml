@@ -1,0 +1,55 @@
+#package_update: true
+#package_upgrade: true
+#apt:
+#  preserve_sources_list: true
+#  sources:
+#    docker.list:
+#      source: "deb [arch=amd64] https://download.docker.com/linux/ubuntu $RELEASE stable"
+#      # curl -sL https://download.docker.com/linux/ubuntu/gpg | gpg
+#      keyid: 9DC858229FC7DD38854AE2D88D81803C0EBFCD88
+#      keyserver: https://download.docker.com/linux/ubuntu/gpg
+#
+#
+#packages: 
+#  - apt-transport-https
+#  - ca-certificates
+#  - curl
+#  - software-properties-common
+#  - [docker-ce, 17.03.2~ce-0~ubuntu-xenial]
+#  - docker-compose
+
+package_update: true
+package_upgrade: true
+
+groups:
+  - docker
+
+system_info:
+  default_user:
+    groups: [ docker ]
+
+packages:
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - gnupg
+  - lsb-release
+  - unattended-upgrades
+
+runcmd:
+  # Docker CE setup
+  - mkdir -p /etc/apt/keyrings
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+  - echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+  - apt-get update
+  - apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+  - systemctl enable docker
+  - systemctl start docker
+  # Tailscale setup
+  - curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.noarmor.gpg | tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
+  - curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.tailscale-keyring.list | tee /etc/apt/sources.list.d/tailscale.list
+  - apt-get update
+  - apt-get install tailscale
+  #- tailscale up --accept-routes
+
+final_message: "The system is up, after $UPTIME seconds"
