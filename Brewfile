@@ -54,5 +54,6 @@ cask "bitwarden"
 cask "spotify", args: { appdir: "~/my-apps/Applications" }
 cask "visual-studio-code", args: { appdir: "~/my-apps/Applications" }
 cask "metasploit"
+cask "multipass"
 
 #mas "com.apple.dt.Xcode", id: 497799835
