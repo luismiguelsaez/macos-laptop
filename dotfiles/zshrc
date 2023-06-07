@@ -1,0 +1,27 @@
+
+alias c="clear"
+## Kubernetes
+alias kctx="kubectx"
+alias kns="kubens"
+alias k="kubectl"
+## Commands
+alias cat="bat --theme='Solarized (light)'"
+alias cat="bat"
+#alias vi="vim"
+alias la="exa --all --long --sort date --group-directories-first --time modified --extended --git --icons --octal-permissions"
+alias ll="exa --long --sort date --group-directories-first --time modified --extended --git --icons --octal-permissions"
+alias tfswitch="tfswitch -b ~/.local/bin/"
+alias sha1sum="shasum"
+
+autoload -U compinit && compinit
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+PROMPT='$(kube_ps1)'$PROMPT
+
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# To use for k9s configuration
+export XDG_CONFIG_HOME=$HOME/.config
