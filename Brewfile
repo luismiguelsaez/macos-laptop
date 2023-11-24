@@ -38,6 +38,7 @@ brew "git"
 brew "trivy"
 brew "argocd"
 brew "socat"
+brew "lima"
 
 cask "font-dejavu-sans-mono-nerd-font"
 cask "font-droid-sans-mono-nerd-font"
