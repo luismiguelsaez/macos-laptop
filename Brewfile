@@ -29,3 +29,4 @@ brew "k9s"
 # Desktop apps
 cask "firefox", args: { }
 cask "slack", args: { }
+cask "visual-studio-code", args: { }
