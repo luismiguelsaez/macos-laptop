@@ -1,5 +1,6 @@
 # Doc: https://github.com/Homebrew/homebrew-bundle
 
+# Fonts
 tap "homebrew/cask-fonts"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-roboto-mono-nerd-font"
