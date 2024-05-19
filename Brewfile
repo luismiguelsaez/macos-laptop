@@ -34,7 +34,11 @@ cask "burp-suite", args: { }
 cask "wireshark", args: { }
 
 # Desktop apps
+# https://github.com/Homebrew/homebrew-cask/tree/master/Casks
 cask "firefox", args: { }
 cask "slack", args: { }
 cask "visual-studio-code", args: { }
+cask "docker", args: { }
+cask "scroll-reverser", args: { }
+cask "megasync", args: { }
 
