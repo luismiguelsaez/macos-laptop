@@ -1,5 +1,8 @@
 # Doc: https://github.com/Homebrew/homebrew-bundle
 
+# General config
+#cask_args appdir: "~/Applications", require_sha: true
+
 # Fonts
 tap "homebrew/cask-fonts"
 cask "font-jetbrains-mono-nerd-font"
