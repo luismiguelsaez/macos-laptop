@@ -27,7 +27,14 @@ brew "kube-ps1"
 brew "kubectx"
 brew "k9s"
 
+# Security
+brew "nmap"
+brew "exploitdb"
+cask "burp-suite", args: { }
+cask "wireshark", args: { }
+
 # Desktop apps
 cask "firefox", args: { }
 cask "slack", args: { }
 cask "visual-studio-code", args: { }
+
