@@ -15,7 +15,10 @@ brew "awscli"
 brew "bat"
 brew "eza"
 brew "tmux"
+brew "zellij"
 brew "jq"
+brew "powerlevel10k"
+cask "font-meslo-for-powerlevel10k"
 
 # Coding
 brew "git"
@@ -44,4 +47,5 @@ cask "visual-studio-code", args: { }
 cask "docker", args: { }
 cask "scroll-reverser", args: { }
 cask "megasync", args: { }
+cask "httpie"
 
