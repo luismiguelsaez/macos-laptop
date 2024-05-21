@@ -26,6 +26,7 @@ brew "go"
 brew "node"
 brew "neovim"
 brew "k6"
+brew "ipython"
 
 # Kubernetes
 brew "kubernetes-cli"
