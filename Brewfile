@@ -34,6 +34,8 @@ brew "kube-ps1"
 brew "kubectx"
 brew "k9s"
 brew "kind"
+brew "helm"
+brew "kustomize"
 
 # Security
 brew "nmap"
