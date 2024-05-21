@@ -32,6 +32,7 @@ brew "kubernetes-cli"
 brew "kube-ps1"
 brew "kubectx"
 brew "k9s"
+brew "kind"
 
 # Security
 brew "nmap"
