@@ -40,6 +40,7 @@ brew "kustomize"
 # Security
 brew "nmap"
 brew "exploitdb"
+brew "trivy"
 cask "burp-suite", args: { }
 cask "wireshark", args: { }
 
