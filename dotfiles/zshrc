@@ -15,6 +15,7 @@ HIST_STAMPS="yyyy-mm-dd"
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
+alias c="clear"
 alias ll="eza --icons=auto --git --long --octal-permissions"
 alias cat="bat --theme=ansi"
 alias kctx="kubectx"
