@@ -51,5 +51,6 @@ cask "visual-studio-code", args: { }
 cask "docker", args: { }
 cask "scroll-reverser", args: { }
 cask "megasync", args: { }
-cask "httpie"
+cask "google-chrome", args: { }
+cask "httpie", args: { }
 
