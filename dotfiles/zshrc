@@ -26,6 +26,7 @@ alias kns="kubens"
 alias vi='nvim'
 alias vim='nvim'
 alias python='python3'
+alias zellij='zellij --layout .config/zellij/layouts/custom.kdl'
 
 # Powerlevel10k theme
 source $HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
