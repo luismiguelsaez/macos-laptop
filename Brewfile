@@ -19,6 +19,7 @@ brew "zellij"
 brew "jq"
 brew "powerlevel10k"
 cask "font-meslo-for-powerlevel10k"
+brew "htop"
 
 # Coding
 brew "git"
