@@ -21,6 +21,9 @@ brew "powerlevel10k"
 cask "font-meslo-for-powerlevel10k"
 brew "htop"
 
+# System
+cask "utm"
+
 # Coding
 brew "git"
 brew "go"

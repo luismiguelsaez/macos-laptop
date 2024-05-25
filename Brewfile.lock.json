@@ -101,6 +101,12 @@
         "options": {
           "full_name": "google-chrome"
         }
+      },
+      "utm": {
+        "version": "4.5.3",
+        "options": {
+          "full_name": "utm"
+        }
       }
     },
     "brew": {
