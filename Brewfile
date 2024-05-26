@@ -22,7 +22,7 @@ cask "font-meslo-for-powerlevel10k"
 brew "htop"
 
 # System
-cask "utm"
+cask "utm", args: { }
 
 # Coding
 brew "git"
