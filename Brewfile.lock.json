@@ -107,6 +107,12 @@
         "options": {
           "full_name": "utm"
         }
+      },
+      "ollama": {
+        "version": "0.1.38",
+        "options": {
+          "full_name": "ollama"
+        }
       }
     },
     "brew": {

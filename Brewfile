@@ -20,6 +20,7 @@ brew "jq"
 brew "powerlevel10k"
 cask "font-meslo-for-powerlevel10k"
 brew "htop"
+cask "ollama"
 
 # System
 cask "utm", args: { }
