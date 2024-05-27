@@ -48,6 +48,7 @@ brew "exploitdb"
 brew "trivy"
 cask "burp-suite", args: { }
 cask "wireshark", args: { }
+brew "gpg"
 
 # Desktop apps
 # https://github.com/Homebrew/homebrew-cask/tree/master/Casks
