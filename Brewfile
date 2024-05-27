@@ -45,6 +45,9 @@ brew "kind"
 brew "helm"
 brew "kustomize"
 
+# IaC
+brew "terraform"
+
 # Security
 brew "nmap"
 brew "exploitdb"
