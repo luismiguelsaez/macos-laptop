@@ -24,6 +24,7 @@ cask "ollama"
 
 # System
 cask "utm", args: { }
+cask "aws-vpn-client", args: { }
 
 # Coding
 brew "git"
@@ -32,6 +33,7 @@ brew "node"
 brew "neovim"
 brew "k6"
 brew "ipython"
+brew "gh"
 
 # Kubernetes
 brew "kubernetes-cli"
@@ -49,6 +51,8 @@ brew "trivy"
 cask "burp-suite", args: { }
 cask "wireshark", args: { }
 brew "gpg"
+brew "gpg"
+
 
 # Desktop apps
 # https://github.com/Homebrew/homebrew-cask/tree/master/Casks
