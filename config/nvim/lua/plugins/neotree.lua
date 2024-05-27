@@ -16,6 +16,14 @@ return {
           prompt_message = "Pick window: ",
           hint = "statusline-winbar",
           selection_chars = "FJDKSLA;CMRUEIWOQP",
+          sources = {
+            "filesystem",
+            "buffers",
+          },
+          source_selector = {
+            { source = "filesystem" },
+            { source = "buffers" },
+          },
           picker_config = {
             statusline_winbar_picker = {
               -- You can change the display string in status bar.
