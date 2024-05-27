@@ -113,6 +113,12 @@
         "options": {
           "full_name": "ollama"
         }
+      },
+      "aws-vpn-client": {
+        "version": "3.10.0",
+        "options": {
+          "full_name": "aws-vpn-client"
+        }
       }
     },
     "brew": {

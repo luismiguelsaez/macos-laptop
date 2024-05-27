@@ -18,6 +18,9 @@ return {
         },
       },
       pickers = {
+        find_files = {
+          theme = "dropdown",
+        },
         -- Default configuration for builtin pickers goes here:
         -- picker_name = {
         --   picker_config_key = value,
@@ -34,5 +37,6 @@ return {
         -- please take a look at the readme of the extension you want to configure
       },
     })
+    require("telescope").load_extension("fzy_native")
   end,
 }
