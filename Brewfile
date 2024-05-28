@@ -22,6 +22,7 @@ brew "fzf"
 brew "powerlevel10k"
 cask "font-meslo-for-powerlevel10k"
 brew "htop"
+brew "btop"
 cask "ollama"
 
 # System
