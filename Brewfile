@@ -48,6 +48,7 @@ brew "kustomize"
 
 # IaC
 brew "terraform"
+brew "opentofu"
 
 # Security
 brew "nmap"
