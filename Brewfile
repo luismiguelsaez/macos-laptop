@@ -12,6 +12,7 @@ cask "font-meslo-lg-nerd-font"
 
 # Command line tools
 brew "awscli"
+brew "aws-iam-authenticator"
 brew "bat"
 brew "eza"
 brew "tmux"
