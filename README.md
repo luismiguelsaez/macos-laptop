@@ -7,3 +7,26 @@
     ```
 
 - Install Neovim: https://www.lazyvim.org/installation
+
+## Key bindings
+
+### Vim
+
+`*` - search word
+  `n` - next match
+  `N` - prev match
+`v` - words select
+`Crtrl-v` - block select
+`Shift-v` - line select
+
+### Zellij
+
+`C-t` - switch tabs
+`C-p` - switch panes
+
+### Neotree
+
+`Opt-\` - get back to tree
+`< >` - switch to git_status, filesystem, buffers
+`Shift-l` - rotate buffers
+

@@ -1,6 +1,7 @@
 return {
   "numToStr/FTerm.vim",
   name = "FTerm",
+  enabled = true,
   event = "VeryLazy",
   version = "master",
   config = function()
