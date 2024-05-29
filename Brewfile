@@ -11,6 +11,7 @@ cask "font-hack-nerd-font"
 cask "font-meslo-lg-nerd-font"
 
 # Command line tools
+cask "alacritty"
 brew "awscli"
 brew "aws-iam-authenticator"
 brew "bat"

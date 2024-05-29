@@ -119,6 +119,12 @@
         "options": {
           "full_name": "aws-vpn-client"
         }
+      },
+      "alacritty": {
+        "version": "0.13.2",
+        "options": {
+          "full_name": "alacritty"
+        }
       }
     },
     "brew": {
