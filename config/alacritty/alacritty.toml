@@ -1,22 +1,42 @@
-# https://alacritty.org/config-alacritty.html
+
+import = []
+live_config_reload = true
+
 [env]
 TERM = "xterm-256color"
 
 [window]
 padding.x = 10
-padding.y = 10
-dimensions.columns = 230
-dimensions.lines = 70
-
+padding.y = 30
+position.x = 0
+position.y = 0
+dimensions.columns = 190 
+dimensions.lines = 55
 decorations = "Transparent"
-
-opacity = 0.7
+opacity = 0.8
 blur = true
-
 option_as_alt = "Both"
+startup_mode = "Maximized"
+
+[scrolling]
+history = 10000
+multiplier = 3
 
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
-
+normal.style = "Regular"
 size = 12
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+unfocused_hollow = true
+thickness = 0.15
+
+[mouse]
+hide_when_typing = false
+
+[shell]
+program = "/bin/zsh"
+args = ["-l"]
+
 
