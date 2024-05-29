@@ -1,0 +1,26 @@
+[sso-session default]
+sso_start_url = https://dummy.awsapps.com/start
+sso_region = us-east-2
+sso_registration_scopes = sso:account:access
+
+[profile prod]
+sso_session = default
+sso_account_id = 463117020000
+sso_role_name = AdministratorAccess
+region = us-east-2
+output = json
+
+[profile mgmt]
+sso_session = default
+sso_account_id = 447542670000
+sso_role_name = AdministratorAccess
+region = us-east-2
+output = json
+
+[profile default]
+sso_session = default
+sso_account_id = 447542670000
+sso_role_name = AdministratorAccess
+region = us-east-2
+output = json
+
