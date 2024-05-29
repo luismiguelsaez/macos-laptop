@@ -17,8 +17,11 @@ HIST_STAMPS="yyyy-mm-dd"
 
 source $ZSH/oh-my-zsh.sh
 
+eval "$(zoxide init zsh)"
+
 # Aliases
 alias c="clear"
+alias cd="z"
 alias ll="eza --icons=auto --git --long --octal-permissions"
 alias cat="bat --theme=ansi"
 alias kctx="kubectx"
