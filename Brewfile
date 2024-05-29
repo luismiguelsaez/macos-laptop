@@ -24,6 +24,9 @@ cask "font-meslo-for-powerlevel10k"
 brew "htop"
 brew "btop"
 cask "ollama"
+brew "wget"
+brew "rg"
+brew "lazygit"
 
 # System
 cask "utm", args: { }
