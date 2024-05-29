@@ -1,11 +1,14 @@
+# https://alacritty.org/config-alacritty.html
 [env]
 TERM = "xterm-256color"
 
 [window]
 padding.x = 10
 padding.y = 10
+dimensions.columns = 230
+dimensions.lines = 70
 
-decorations = "Buttonless"
+decorations = "Transparent"
 
 opacity = 0.7
 blur = true
@@ -15,5 +18,5 @@ option_as_alt = "Both"
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
 
-size = 18
+size = 12
 
