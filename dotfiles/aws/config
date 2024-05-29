@@ -1,9 +1,0 @@
-# https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-files.html 
-[default]
-region=us-east-2
-output=json
-
-[profile mgmt]
-region=us-east-2
-output=text
-

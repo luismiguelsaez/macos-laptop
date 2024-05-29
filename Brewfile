@@ -17,7 +17,6 @@ brew "bat"
 brew "eza"
 brew "tmux"
 brew "zellij"
-brew "wget"
 brew "jq"
 brew "fzf"
 brew "powerlevel10k"
@@ -25,8 +24,6 @@ cask "font-meslo-for-powerlevel10k"
 brew "htop"
 brew "btop"
 cask "ollama"
-brew "rg"
-brew "lazygit"
 
 # System
 cask "utm", args: { }
