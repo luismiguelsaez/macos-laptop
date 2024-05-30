@@ -14,7 +14,7 @@ position.y = 0
 dimensions.columns = 190 
 dimensions.lines = 55
 decorations = "Buttonless"
-opacity = 0.8
+opacity = 0.99
 blur = true
 option_as_alt = "None"
 startup_mode = "Maximized"
@@ -27,6 +27,9 @@ multiplier = 3
 normal.family = "MesloLGS Nerd Font Mono"
 normal.style = "Regular"
 size = 12
+
+[colors]
+primary.foreground = "#00C601"
 
 [cursor]
 style = { shape = "Block", blinking = "Off" }
