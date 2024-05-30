@@ -7,8 +7,8 @@ TERM = "xterm-256color"
 
 [window]
 dynamic_padding = true
-padding.x = 8
-padding.y = 8 
+padding.x = 4 
+padding.y = 4 
 position.x = 0
 position.y = 0
 dimensions.columns = 190 
@@ -43,4 +43,6 @@ hide_when_typing = false
 program = "/bin/zsh"
 args = ["-l"]
 
+[selection]
+save_to_clipboard = true
 
