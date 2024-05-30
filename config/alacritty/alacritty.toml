@@ -15,7 +15,7 @@ dimensions.lines = 55
 decorations = "Transparent"
 opacity = 0.8
 blur = true
-option_as_alt = "Both"
+option_as_alt = "None"
 startup_mode = "Maximized"
 
 [scrolling]
