@@ -18,6 +18,7 @@
 `v` - words select
 `Crtrl-v` - block select
 `Shift-v` - line select
+`Space-ft` - floating terminal
 
 ### Zellij
 
