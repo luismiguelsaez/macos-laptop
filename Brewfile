@@ -53,6 +53,7 @@ brew "k9s"
 brew "kind"
 brew "helm"
 brew "kustomize"
+brew "glooctl"
 
 # IaC
 brew "terraform"
