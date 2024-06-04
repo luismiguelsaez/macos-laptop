@@ -54,6 +54,7 @@ brew "kind"
 brew "helm"
 brew "kustomize"
 brew "glooctl"
+brew "pixie"
 
 # IaC
 brew "terraform"
@@ -79,4 +80,3 @@ cask "scroll-reverser", args: { }
 cask "megasync", args: { }
 cask "google-chrome", args: { }
 cask "httpie", args: { }
-
