@@ -1,13 +1,28 @@
 layout {
-  pane split_direction="vertical" {
-    pane
-    pane split_direction="horizontal" {
-        pane
-        pane command="htop"
+  tab name="main" {
+    pane split_direction="vertical" {
+      pane
+      pane split_direction="horizontal" {
+          pane
+          pane command="btop"
+      }
+    }
+    pane size=1 borderless=true {
+      plugin location="zellij:compact-bar"
     }
   }
-  pane size=1 borderless=true {
-    plugin location="zellij:compact-bar"
+  tab name="k9s" {
+    pane command="k9s"
+    pane size=1 borderless=true {
+      plugin location="zellij:compact-bar"
+    }
+  }
+  tab name="neovim" cwd="~/github" {
+    pane command="nvim" {
+      args "."
+    }
+    pane size=1 borderless=true {
+      plugin location="zellij:compact-bar"
+    }
   }
 }
-
