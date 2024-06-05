@@ -31,7 +31,10 @@ alias vim='nvim'
 alias python='python3'
 alias zellij='zellij --layout .config/zellij/layouts/custom.kdl'
 
+# Krew path
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 # Powerlevel10k theme
 source $HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
