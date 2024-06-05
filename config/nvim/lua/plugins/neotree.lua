@@ -368,5 +368,6 @@ return {
     })
     vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
     vim.keymap.set("n", "<C-e>", "<Cmd>Neotree toggle<CR>")
+    vim.keymap.set("n", "o", "Neotree focus", { desc = "NeoTree focus" })
   end,
 }
