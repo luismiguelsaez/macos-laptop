@@ -1,3 +1,6 @@
-# https://git-scm.com/docs/git-config
+# # https://git-scm.com/docs/git-config
+ 
 [push]
 	autoSetupRemote = true
+[user]
+	name = luismiguelsaez
