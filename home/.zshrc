@@ -31,6 +31,9 @@ alias vim='nvim'
 alias python='python3'
 alias zellij='zellij --layout .config/zellij/layouts/custom.kdl'
 
+# K9s config
+K9S_CONFIG_DIR="~/.config/k9s"
+
 # Krew path
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
