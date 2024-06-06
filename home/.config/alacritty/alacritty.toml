@@ -1,5 +1,8 @@
 
-import = []
+import = [
+    "~/.config/alacritty/themes/themes/tokyo-night.toml"
+]
+
 live_config_reload = true
 
 [env]
@@ -45,4 +48,3 @@ args = ["-l"]
 
 [selection]
 save_to_clipboard = true
-
