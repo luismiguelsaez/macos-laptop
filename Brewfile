@@ -44,6 +44,7 @@ brew "neovim"
 brew "k6"
 brew "ipython"
 brew "gh"
+brew "act"
 
 # Kubernetes
 brew "kubernetes-cli"
