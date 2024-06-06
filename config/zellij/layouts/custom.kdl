@@ -1,4 +1,13 @@
 layout {
+  default_tab_template {
+    pane size=1 borderless=true {
+      plugin location="zellij:tab-bar"
+    }
+    children
+    pane size=2 borderless=true {
+      plugin location="zellij:status-bar"
+    }
+  }
   tab name="main" {
     pane split_direction="vertical" {
       pane
@@ -7,22 +16,13 @@ layout {
           pane command="btop"
       }
     }
-    pane size=1 borderless=true {
-      plugin location="zellij:compact-bar"
-    }
   }
   tab name="k9s" {
     pane command="k9s"
-    pane size=1 borderless=true {
-      plugin location="zellij:compact-bar"
-    }
   }
   tab name="neovim" cwd="~/github" {
     pane command="nvim" {
       args "."
-    }
-    pane size=1 borderless=true {
-      plugin location="zellij:compact-bar"
     }
   }
 }
