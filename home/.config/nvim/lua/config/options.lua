@@ -12,3 +12,6 @@ map("n", "<leader>ef", ":Neotree float<cr>", defaults)
 map("n", "<leader>el", ":Neotree left<cr>", defaults)
 map("n", "<leader>eb", ":Neotree bottom<cr>", defaults)
 map("n", "<leader>eg", ":Neotree git_status<cr>", defaults)
+
+-- Telescope mappings
+map("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
