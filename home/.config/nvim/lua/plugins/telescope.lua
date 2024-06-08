@@ -11,6 +11,10 @@ return {
         require("telescope").load_extension("fzf")
       end,
     },
+    {
+      "nvim-telescope/telescope-live-grep-args.nvim",
+      version = "^1.0.0",
+    },
   },
   config = function()
     require("telescope").setup({
@@ -47,5 +51,6 @@ return {
       },
     })
     -- require("telescope").load_extension("fzy_native")
+    require("telescope").load_extension("live_grep_args")
   end,
 }
