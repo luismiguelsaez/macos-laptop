@@ -14,4 +14,9 @@ map("n", "<leader>eb", ":Neotree bottom<cr>", defaults)
 map("n", "<leader>eg", ":Neotree git_status<cr>", defaults)
 
 -- Telescope mappings
-map("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+map(
+  "n",
+  "<leader>fg",
+  ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+  { desc = "Recursive grep" }
+)
