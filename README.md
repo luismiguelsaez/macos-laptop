@@ -30,4 +30,4 @@
 `Opt-\` - get back to tree
 `< >` - switch to git_status, filesystem, buffers
 `Shift-l` - rotate buffers
-
+`C-w` - focus on buffers
