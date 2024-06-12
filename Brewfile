@@ -32,6 +32,7 @@ cask "ollama"
 brew "wget"
 brew "rg"
 brew "lazygit"
+brew "lazydocker"
 brew "ripgrep"
 
 # System
