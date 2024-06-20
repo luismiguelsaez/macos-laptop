@@ -62,8 +62,10 @@ brew "glooctl"
 brew "pixie"
 
 # IaC
-brew "terraform"
+#brew "terraform"
 brew "opentofu"
+tap "hashicorp/tap"
+brew "hashicorp/tap/terraform"
 
 # Security
 brew "nmap"
