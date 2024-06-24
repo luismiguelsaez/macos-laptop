@@ -50,6 +50,7 @@ brew "gh"
 brew "act"
 brew "mongosh"
 brew "go-jsonnet"
+brew "jsonnet-bundler"
 
 # Kubernetes
 brew "kubernetes-cli"
