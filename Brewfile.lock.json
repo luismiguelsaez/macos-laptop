@@ -5,7 +5,7 @@
         "revision": "0ed20f35d21ebc3f4f829689b101078718ad5ce1"
       },
       "hashicorp/tap": {
-        "revision": "1c5b3f11ed3d89e4c11dce92eab8e3e262f3d8f2"
+        "revision": "86b0f64bf7f057f2090e515954703885cefc6091"
       }
     },
     "cask": {
@@ -70,7 +70,7 @@
         }
       },
       "scroll-reverser": {
-        "version": "1.8.2",
+        "version": "1.9",
         "options": {
           "full_name": "scroll-reverser"
         }
@@ -100,7 +100,7 @@
         }
       },
       "google-chrome": {
-        "version": "126.0.6478.62",
+        "version": "126.0.6478.115",
         "options": {
           "full_name": "google-chrome"
         }
@@ -112,7 +112,7 @@
         }
       },
       "ollama": {
-        "version": "0.1.44",
+        "version": "0.1.45",
         "options": {
           "full_name": "ollama"
         }
@@ -133,6 +133,12 @@
         "version": "2.9",
         "options": {
           "full_name": "skitch"
+        }
+      },
+      "spotify": {
+        "version": "1.2.40.599,606b7f29,602",
+        "options": {
+          "full_name": "spotify"
         }
       }
     },
@@ -622,15 +628,15 @@
         }
       },
       "kube-ps1": {
-        "version": "0.8.0",
+        "version": "0.9.0",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "all": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/kube-ps1/blobs/sha256:e5d9cf3512efbda9b7fcbabd2726adbee97ae8c38596835197f648b14b7d94ab",
-              "sha256": "e5d9cf3512efbda9b7fcbabd2726adbee97ae8c38596835197f648b14b7d94ab"
+              "url": "https://ghcr.io/v2/homebrew/core/kube-ps1/blobs/sha256:8b7dbe43c977fc6410a1c076cdd9d488a42201b62be6389e0f09b63030bf5e1b",
+              "sha256": "8b7dbe43c977fc6410a1c076cdd9d488a42201b62be6389e0f09b63030bf5e1b"
             }
           }
         }

@@ -80,6 +80,7 @@ brew "gpg"
 # Desktop apps
 # https://github.com/Homebrew/homebrew-cask/tree/master/Casks
 cask "firefox", args: { }
+cask "spotify", args: { }
 cask "slack", args: { }
 cask "visual-studio-code", args: { }
 cask "docker", args: { }
