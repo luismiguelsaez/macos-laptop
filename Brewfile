@@ -49,6 +49,7 @@ brew "ipython"
 brew "gh"
 brew "act"
 brew "mongosh"
+brew "go-jsonnet"
 
 # Kubernetes
 brew "kubernetes-cli"
