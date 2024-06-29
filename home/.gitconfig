@@ -1,7 +1,11 @@
 # # https://git-scm.com/docs/git-config
  
 [push]
-	autoSetupRemote = true
+  autoSetupRemote = true
+[advic3]
+  addIgnoredFile = false
 [user]
 	name = luismiguelsaez
 	email = luismiguelsaez@protonmail.com
+[init]
+	defaultBranch = main
