@@ -2,7 +2,7 @@
  
 [push]
   autoSetupRemote = true
-[advic3]
+[advice]
   addIgnoredFile = false
 [user]
 	name = luismiguelsaez
