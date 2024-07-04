@@ -1,11 +1,17 @@
-# # https://git-scm.com/docs/git-config
+# https://git-scm.com/docs/git-config
  
 [push]
   autoSetupRemote = true
+
 [advice]
   addIgnoredFile = false
+
 [user]
 	name = luismiguelsaez
-	email = luismiguelsaez@protonmail.com
+  email = luismiguelsaez@protonmail.com
+
 [init]
-	defaultBranch = main
+  defaultBranch = main
+
+[alias]
+  undo = reset --soft HEAD^
