@@ -41,6 +41,9 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 # Oh-my-posh
 eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/cloud-context.omp.json)"
 
+# Load FZF shell integration
+source <(fzf --zsh)
+
 # Powerlevel10k theme
 source $HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
 
