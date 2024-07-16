@@ -63,9 +63,10 @@ brew "helm"
 brew "kustomize"
 brew "glooctl"
 brew "pixie"
+tap "fluxcd/tap"
+brew "fluxcd/tap/flux@2.2"
 
 # IaC
-#brew "terraform"
 brew "opentofu"
 tap "hashicorp/tap"
 brew "hashicorp/tap/terraform"
@@ -77,8 +78,6 @@ brew "trivy"
 cask "burp-suite", args: { }
 cask "wireshark", args: { }
 brew "gpg"
-brew "gpg"
-
 
 # Desktop apps
 # https://github.com/Homebrew/homebrew-cask/tree/master/Casks
