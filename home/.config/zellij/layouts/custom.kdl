@@ -17,8 +17,8 @@ layout {
       }
     }
   }
-  tab name="k9s" {
-    pane command="k9s"
+  tab name="yazi" {
+    pane command="yazi"
   }
   tab name="neovim" cwd="~/github" {
     pane command="nvim" {
