@@ -2529,8 +2529,3 @@ window_margin_width 2
 #: }}}
 
 #: }}}
-
-# BEGIN_KITTY_THEME
-# Catppuccin-Macchiato
-include current-theme.conf
-# END_KITTY_THEME
