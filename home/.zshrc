@@ -6,7 +6,11 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
-plugins=(git gh kubectl kube-ps1 zsh-autosuggestions)
+
+
+# autoswitch_virtualenv: `git clone "https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git" "$ZSH_CUSTOM/plugins/autoswitch_virtualenv"`
+# zsh-autosuggestions: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+plugins=(git gh kubectl kube-ps1 zsh-autosuggestions autoswitch_virtualenv)
 
 source $HOMEBREW_PREFIX/share/kube-ps1.sh
 PROMPT='$(kube_ps1)'$PROMPT
