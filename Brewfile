@@ -4,7 +4,6 @@
 #cask_args appdir: "~/Applications", require_sha: true
 
 # Fonts
-tap "homebrew/cask-fonts"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-roboto-mono-nerd-font"
 cask "font-hack-nerd-font"
@@ -23,7 +22,6 @@ brew "zellij"
 brew "jq"
 brew "yq"
 brew "fzf"
-brew "powerlevel10k"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 tap "jandedobbeleer/oh-my-posh"
@@ -80,6 +78,9 @@ brew "trivy"
 cask "burp-suite", args: { }
 cask "wireshark", args: { }
 brew "gpg"
+
+# Utils
+brew "qpdf"
 
 # Desktop apps
 # https://github.com/Homebrew/homebrew-cask/tree/master/Casks
