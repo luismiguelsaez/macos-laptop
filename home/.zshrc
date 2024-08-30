@@ -1,7 +1,4 @@
-
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#!/usr/bin/env zsh
 
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -47,8 +44,3 @@ eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/cloud-co
 
 # Load FZF shell integration
 source <(fzf --zsh)
-
-# Powerlevel10k theme
-source $HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
-
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
