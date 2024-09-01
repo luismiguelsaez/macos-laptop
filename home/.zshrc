@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
@@ -9,7 +7,7 @@ ZSH_THEME="robbyrussell"
 # zsh-autosuggestions: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 plugins=(git gh kubectl kube-ps1 zsh-autosuggestions autoswitch_virtualenv)
 
-source $HOMEBREW_PREFIX/share/kube-ps1.sh
+source $(brew --prefix)/share/kube-ps1.sh
 PROMPT='$(kube_ps1)'$PROMPT
 
 HYPHEN_INSENSITIVE="true"
@@ -44,3 +42,4 @@ eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/cloud-co
 
 # Load FZF shell integration
 source <(fzf --zsh)
+
