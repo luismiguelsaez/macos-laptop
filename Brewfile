@@ -52,6 +52,7 @@ brew "act"
 brew "mongosh"
 brew "go-jsonnet"
 brew "jsonnet-bundler"
+brew "virtualenv"
 
 # Kubernetes
 brew "kubernetes-cli"
