@@ -35,6 +35,7 @@ brew "lazygit"
 brew "lazydocker"
 brew "ripgrep"
 brew "yazi"
+brew "sshpass"
 
 # System
 cask "utm", args: { }
