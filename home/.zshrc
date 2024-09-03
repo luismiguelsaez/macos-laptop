@@ -29,7 +29,7 @@ alias kns="kubens"
 alias vi='nvim'
 alias vim='nvim'
 alias python='python3'
-alias zellij='zellij --layout .config/zellij/layouts/custom.kdl'
+alias zellij='zellij --layout ~/.config/zellij/layouts/custom.kdl'
 
 # K9s config
 K9S_CONFIG_DIR="~/.config/k9s"
