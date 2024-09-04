@@ -38,7 +38,8 @@ K9S_CONFIG_DIR="~/.config/k9s"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # Oh-my-posh
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/cloud-context.omp.json)"
+OMP_THEME="amro"
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/${OMP_THEME}.omp.json)"
 
 # Load FZF shell integration
 source <(fzf --zsh)
