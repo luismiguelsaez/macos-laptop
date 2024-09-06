@@ -38,7 +38,7 @@ K9S_CONFIG_DIR="~/.config/k9s"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # Oh-my-posh
-OMP_THEME="amro"
+OMP_THEME="catppuccin_macchiato"
 eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/${OMP_THEME}.omp.json)"
 
 # Load FZF shell integration
