@@ -10,7 +10,6 @@ cask "font-hack-nerd-font"
 cask "font-meslo-lg-nerd-font"
 
 # Command line tools
-cask "alacritty"
 cask "kitty"
 brew "awscli"
 brew "aws-iam-authenticator"
@@ -25,10 +24,7 @@ brew "fzf"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 tap "jandedobbeleer/oh-my-posh"
-cask "font-meslo-for-powerlevel10k"
-brew "htop"
 brew "btop"
-cask "ollama"
 brew "wget"
 brew "rg"
 brew "lazygit"
@@ -50,7 +46,6 @@ brew "k6"
 brew "ipython"
 brew "gh"
 brew "act"
-brew "mongosh"
 brew "go-jsonnet"
 brew "jsonnet-bundler"
 brew "virtualenv"
@@ -95,4 +90,3 @@ cask "scroll-reverser", args: { }
 cask "megasync", args: { }
 cask "google-chrome", args: { }
 cask "httpie", args: { }
-cask "skitch", args: { }
