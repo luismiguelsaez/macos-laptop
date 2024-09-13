@@ -2,7 +2,7 @@
 
 # Install oh-my-zsh and plugins
 
-if [ ! -e ~/.oh-my-zsh ]; then
+if [[ "$ZSH" == "" ]] || [[ ! -e ~/.oh-my-zsh ]]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 else
   log_yellow "Skipping ohmyzsh install"
@@ -31,4 +31,3 @@ brew bundle
 # Copy dotfiles, including hidden files
 
 cp -rp home/ ~/
-
