@@ -4,13 +4,12 @@ return {
   opts = {
     ensure_installed = {
       "lua_ls",
-      "pylsp",
       "bashls",
       "awk_ls",
       "ansiblels",
       "jsonls",
-      "pyright",
       "clangd",
+      "pyright",
     },
   },
   config = function()
@@ -26,6 +25,16 @@ return {
         },
       },
     })
-    lspconfig.pyright.setup({})
+    lspconfig.pyright.setup({
+      settings = {
+        python = {
+          analysis = {
+            autoSearchPaths = true,
+            diagnosticMode = "openFilesOnly",
+            useLibraryCodeForTypes = true,
+          },
+        },
+      },
+    })
   end,
 }
