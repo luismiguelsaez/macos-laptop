@@ -10,6 +10,7 @@ return {
       "jsonls",
       "clangd",
       "pyright",
+      "pylsp",
     },
   },
   config = function()
@@ -25,13 +26,13 @@ return {
         },
       },
     })
+    -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#pyright
     lspconfig.pyright.setup({
       settings = {
         python = {
           analysis = {
             autoSearchPaths = true,
             diagnosticMode = "openFilesOnly",
-            useLibraryCodeForTypes = true,
           },
         },
       },
@@ -41,7 +42,8 @@ return {
         pylsp = {
           plugins = {
             pycodestyle = {
-              enabled = false,
+              enabled = true,
+              ignore = "E391",
             },
           },
         },
