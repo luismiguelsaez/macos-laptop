@@ -1,0 +1,14 @@
+tell application "Mail"
+	set a to 0
+	set _ago to (current date) - (1 * days)
+	repeat with theAccount in (every account)
+		repeat with theBox in (every mailbox of theAccount)
+			repeat with theMessage in (every message of theBox where read status is false and date received comes before _ago)
+				tell theMessage
+					display dialog ("Message found: " & subject)
+				end tell
+			end repeat
+		end repeat
+	end repeat
+end tell
+
