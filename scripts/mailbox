@@ -3,12 +3,22 @@ tell application "Mail"
 	set _ago to (current date) - (1 * days)
 	repeat with theAccount in (every account)
 		repeat with theBox in (every mailbox of theAccount)
-			repeat with theMessage in (every message of theBox where read status is false and date received comes before _ago)
+			repeat with theMessage in (every message of theBox where read status is true and date received comes before _ago)
 				tell theMessage
-					display dialog ("Message found: " & subject)
+					set theMessageId to message id
+					set theMessageSource to source
+					set theMessageSender to sender
+					set theMessageSubject to subject
+					set theMessageDate to date received
+					set theMessageRecipients to to recipients
+					set theMessageccRecipients to cc recipients
+					set theMessageRecipient to address of item 1 of theMessageRecipients
+					set _messageURL to "message://%3c" & theMessage's message id & "%3e"
+					repeat with i from 1 to (count of theMessageccRecipients)
+						display dialog ("Message found -> [" & theMessageSubject & "] -> " & address of (get cc recipient i) & " - " & _messageURL)
+					end repeat
 				end tell
 			end repeat
 		end repeat
 	end repeat
 end tell
-
