@@ -11,6 +11,8 @@ return {
       "clangd",
       "pyright",
       "pylsp",
+      "jsonnet_ls",
+      "jsonnetfmt",
     },
   },
   config = function()
