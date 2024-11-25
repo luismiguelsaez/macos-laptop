@@ -28,6 +28,9 @@ xcode-select --install
 
 brew bundle
 
+# Install Pyenv plugins
+git clone https://github.com/alefpereira/pyenv-pyright.git $(pyenv root)/plugins/pyenv-pyright
+
 # Copy dotfiles, including hidden files
 
 cp -rp home/ ~/
