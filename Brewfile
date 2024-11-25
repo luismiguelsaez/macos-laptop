@@ -49,6 +49,7 @@ brew "act"
 brew "go-jsonnet"
 brew "jsonnet-bundler"
 brew "virtualenv"
+brew "pyenv"
 
 # Kubernetes
 brew "kubernetes-cli"
