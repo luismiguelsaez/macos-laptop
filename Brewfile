@@ -61,6 +61,7 @@ brew "helm"
 brew "kustomize"
 brew "glooctl"
 brew "pixie"
+brew "krew"
 tap "fluxcd/tap"
 brew "fluxcd/tap/flux@2.2"
 
