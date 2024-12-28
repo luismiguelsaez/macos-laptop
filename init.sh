@@ -31,6 +31,9 @@ brew bundle
 # Install Pyenv plugins
 git clone https://github.com/alefpereira/pyenv-pyright.git $(pyenv root)/plugins/pyenv-pyright
 
+# Install pip packages
+python -m pip install -r requirements.txt
+
 # Copy dotfiles, including hidden files
 
 cp -rp home/ ~/
