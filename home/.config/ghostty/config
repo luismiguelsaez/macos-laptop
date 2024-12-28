@@ -1,14 +1,16 @@
 # https://ghostty.org/docs/config/reference
 
 title = "GhosTTY"
+theme = GruvboxDarkHard
 
 window-theme = system
 window-height = 40
 window-width = 80
-window-save-state = true
+window-save-state = always
 
-window-padding-x = 5,5
-window-padding-y = 5,5
+window-padding-x = 1,1
+window-padding-y = 1,1
+window-padding-balance = true
 
 font-family = "MesloLGS Nerd Font Mono"
 font-size = 12.0
@@ -16,8 +18,10 @@ font-thicken = true
 
 cursor-style = bar
 cursor-style-blink = true
+mouse-hide-while-typing = true
 
-background-opacity = 0.9
+background-opacity = 1
+background = 1C2021
 
 command = ""
 initial-command = ""
