@@ -11,7 +11,6 @@ return {
       "clangd",
       "pyright",
       "pylsp",
-      "jsonnet_ls",
     },
   },
   config = function()
@@ -38,12 +37,13 @@ return {
         },
       },
     })
+    -- https://github.com/python-lsp/python-lsp-server/blob/develop/CONFIGURATION.md
     lspconfig.pylsp.setup({
       settings = {
         pylsp = {
           plugins = {
             pycodestyle = {
-              enabled = true,
+              enabled = false,
               ignore = "E391",
             },
           },
