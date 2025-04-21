@@ -50,3 +50,14 @@ source <(fzf --zsh)
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# Autoload virtualenv
+activate_venv_on_cd() {
+    local venv_dir=".venv"
+    if [[ -d "$PWD/$venv_dir" ]]; then
+        source "$PWD/$venv_dir/bin/activate"
+    fi
+}
+ 
+autoload -U add-zsh-hook
+add-zsh-hook chpwd activate_venv_on_cd
