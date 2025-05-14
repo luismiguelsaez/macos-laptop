@@ -39,6 +39,7 @@ cask "aws-vpn-client", args: { }
 
 # Coding
 brew "git"
+brew "git-flow"
 brew "go"
 brew "node"
 brew "neovim"

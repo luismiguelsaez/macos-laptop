@@ -10,11 +10,27 @@ return {
       "jsonls",
       "clangd",
       "pyright",
-      "pylsp",
+      "ruff",
     },
   },
   config = function()
     local lspconfig = require("lspconfig")
+    -- https://github.com/astral-sh/ruff-lsp?tab=readme-ov-file#settings
+    lspconfig.ruff.setup({
+      init_options = {
+        settings = {
+          -- Modification to any of these settings has no effect.
+          enable = true,
+          ignoreStandardLibrary = true,
+          organizeImports = true,
+          fixAll = true,
+          lint = {
+            enable = true,
+            run = "onType",
+          },
+        },
+      },
+    })
     lspconfig.gopls.setup({
       settings = {
         gopls = {
