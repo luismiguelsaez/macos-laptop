@@ -94,3 +94,5 @@ cask "scroll-reverser", args: { }
 cask "megasync", args: { }
 cask "google-chrome", args: { }
 cask "httpie", args: { }
+cask "multipass", args: { }
+
