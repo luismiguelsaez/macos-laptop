@@ -83,6 +83,9 @@ brew "gpg"
 # Utils
 brew "qpdf"
 
+# AI
+brew llama.cpp
+
 # Desktop apps
 # https://github.com/Homebrew/homebrew-cask/tree/master/Casks
 cask "firefox", args: { }
@@ -96,4 +99,3 @@ cask "megasync", args: { }
 cask "google-chrome", args: { }
 cask "httpie", args: { }
 cask "multipass", args: { }
-
