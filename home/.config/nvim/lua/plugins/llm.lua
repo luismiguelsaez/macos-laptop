@@ -5,8 +5,8 @@ return {
   "huggingface/llm.nvim",
   opts = {
     backend = "ollama",
-    model = "deepseek-coder:6.7b", -- or deepseek-coder, starcoder2, etc.
-    url = "http://localhost:11434/api/generate",
+    model = "codeLlama:7b",
+    url = "http://localhost:11434",
 
     -- Request parameters
     request_body = {
@@ -17,12 +17,12 @@ return {
     },
 
     -- Completion settings
-    tokens_to_clear = { "<|endoftext|>" },
+    tokens_to_clear = { "<|EOT|>" },
     fim = {
       enabled = true,
       prefix = "<PRE>",
-      middle = "<MID>",
-      suffix = "<SUF>",
+      middle = " <MID>",
+      suffix = " <SUF>",
     },
 
     -- UI settings
