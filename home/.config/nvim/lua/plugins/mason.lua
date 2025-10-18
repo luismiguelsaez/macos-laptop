@@ -1,6 +1,6 @@
 return {
-  "williamboman/mason-lspconfig.nvim",
-  dependencies = { "williamboman/mason.nvim" },
+  "mason-org/mason.nvim",
+  dependencies = { "mason-org/mason.nvim" },
   opts = {
     ensure_installed = {
       "lua_ls",
@@ -10,27 +10,12 @@ return {
       "jsonls",
       "clangd",
       "pyright",
-      "ruff",
+      "pylsp",
+      "jsonnet_ls",
     },
   },
   config = function()
     local lspconfig = require("lspconfig")
-    -- https://github.com/astral-sh/ruff-lsp?tab=readme-ov-file#settings
-    lspconfig.ruff.setup({
-      init_options = {
-        settings = {
-          -- Modification to any of these settings has no effect.
-          enable = true,
-          ignoreStandardLibrary = true,
-          organizeImports = true,
-          fixAll = true,
-          lint = {
-            enable = true,
-            run = "onType",
-          },
-        },
-      },
-    })
     lspconfig.gopls.setup({
       settings = {
         gopls = {
@@ -53,13 +38,12 @@ return {
         },
       },
     })
-    -- https://github.com/python-lsp/python-lsp-server/blob/develop/CONFIGURATION.md
     lspconfig.pylsp.setup({
       settings = {
         pylsp = {
           plugins = {
             pycodestyle = {
-              enabled = false,
+              enabled = true,
               ignore = "E391",
             },
           },
