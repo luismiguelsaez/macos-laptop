@@ -1,7 +1,7 @@
 # https://ghostty.org/docs/config/reference
 
 title = "GhosTTY"
-theme = tokyonight-storm
+theme = "TokyoNight"
 #theme = catppuccin-macchiato
 
 window-theme = system
@@ -29,3 +29,4 @@ initial-command = ""
 
 scrollback-limit = 10000
 copy-on-select = true
+keybind = shift+enter=text:\x1b\r
