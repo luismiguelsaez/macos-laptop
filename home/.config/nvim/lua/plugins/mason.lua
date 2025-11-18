@@ -19,27 +19,30 @@ return {
       },
     },
   },
-  -- Your lspconfig setup in a separate block
   {
     "neovim/nvim-lspconfig",
     dependencies = { "mason-org/mason-lspconfig.nvim" },
     config = function()
       local lspconfig = require("lspconfig")
 
+      -- Just use default capabilities - blink.cmp handles it automatically
       local capabilities = vim.lsp.protocol.make_client_capabilities()
-      local has_cmp, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-      if has_cmp then
-        capabilities = cmp_nvim_lsp.default_capabilities()
-      end
 
-      -- Your server setups here
       lspconfig.pyright.setup({
         capabilities = capabilities,
+        on_init = function(client)
+          local venv_path = vim.fn.getcwd() .. "/.venv"
+          if vim.fn.isdirectory(venv_path) == 1 then
+            client.config.settings.python.pythonPath = venv_path .. "/bin/python"
+            client.notify("workspace/didChangeConfiguration", { settings = client.config.settings })
+          end
+        end,
         settings = {
           python = {
             analysis = {
               autoSearchPaths = true,
-              diagnosticMode = "openFilesOnly",
+              diagnosticMode = "workspace",
+              typeCheckingMode = "basic",
             },
           },
         },
@@ -47,9 +50,24 @@ return {
 
       lspconfig.ruff.setup({
         capabilities = capabilities,
+        init_options = {
+          settings = {
+            lineLength = 88,
+            lint = {
+              enable = true,
+              run = "onType",
+              select = { "E", "W", "F", "I", "N", "UP", "B", "C4", "SIM" },
+              ignore = { "E501" },
+            },
+            format = { enable = true },
+            organizeImports = true,
+            fixAll = true,
+          },
+        },
+        on_attach = function(client, bufnr)
+          client.server_capabilities.hoverProvider = false
+        end,
       })
-
-      -- ... rest of your servers
     end,
   },
 }
