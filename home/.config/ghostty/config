@@ -2,7 +2,6 @@
 
 title = "GhosTTY"
 theme = "TokyoNight"
-#theme = catppuccin-macchiato
 
 window-theme = system
 window-height = 40
@@ -30,3 +29,5 @@ initial-command = ""
 scrollback-limit = 10000
 copy-on-select = true
 keybind = shift+enter=text:\x1b\r
+
+integration-features = ssh-env,ssh-terminfo
