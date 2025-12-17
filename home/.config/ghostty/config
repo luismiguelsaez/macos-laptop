@@ -30,4 +30,4 @@ scrollback-limit = 10000
 copy-on-select = true
 keybind = shift+enter=text:\x1b\r
 
-integration-features = ssh-env,ssh-terminfo
+shell-integration-features = ssh-env,ssh-terminfo
