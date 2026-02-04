@@ -53,6 +53,7 @@ brew "jsonnet-bundler"
 brew "virtualenv"
 brew "pyenv"
 brew "uv"
+cask "zed"
 
 # Kubernetes
 brew "kubernetes-cli"
